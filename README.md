@@ -1,6 +1,6 @@
 # WineClassificationCognitivo
 Está sendo utilizado um framework de machine learning preconizado pelo Cientista Lucas Lattari e refatorado por mim para atender diversas demandas de Classificação. Ele oferece a classificação da massa de dados por 3 algoritmos: KNN, SVM e Naive Bayes. Executa o teste com cada um deles e exibe um gráfico comparando as acurácias.
-Para que você teste este trabalho com facilidade, coloque tudo em um diretório C:\cognitivo. Caso trabalhe com outra estrutura de arquivos, basta modificar a chamada os.chdir() presente do cabeçalho dos código para o endereço onde seus arquivos estarão.
+Para que você teste este trabalho com facilidade, coloque tudo em um diretório C:\cognitivo. Caso trabalhe com outra estrutura de arquivos, basta modificar a chamada os.chdir() presente do cabeçalho dos códigos para o endereço onde seus arquivos estarão.
 Começamos com a análise exploratória que está apresentada na pasta Arquivos de Exploração. Depois a codificação que temos 4 arquivos principais, onde estão as linhas de execução para processar as entradas de dados:<br/>
 
   algo_test_winecorrigido.py - Contem a rotina de processamento da fonte de dados sobre vinhos pré_processada e corrigida em ouliers, campos vazios e outras correções. Na pasta Arquivos de Exploração contém resultados da análise exploratória que definiu a limpeza a ser feita.<br/>
