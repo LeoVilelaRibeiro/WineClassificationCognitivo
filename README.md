@@ -17,7 +17,7 @@ Começamos com a análise exploratória que está apresentada na pasta Arquivos 
   naivebayes.py - instancia o classificador de Naive Bayes <br/>
   
   a. Como foi a definição da sua estratégia de modelagem? <br/>
-  A modelagem começou com a transformação do campo type que era "red" ou "white"  em 0 e 1, e a pré suposição de dois formatos de        entrada: todas as variáveis presentes x arquivo com dimensionalidade reduzida. Considerei Y como um resultado numérico viável pois 
+  A modelagem começou com a transformação do campo type que era "red" ou "white"  em 0 e 1, e a pré suposição de dois formatos de        entrada: todas as variáveis presentes versus arquivo com dimensionalidade reduzida. Considerei Y como um resultado numérico viável pois 
   comporta-se como um score.<br/>
    b. Como foi definida a função de custo utilizada?<br/>
   Trabalhamos com duas funções de custo: mae e mse. Utilizei as mesmas por serem bem comuns para modelos de regressão ou classificação     não binária onde o resultado se dá como um score, como foi o caso do exemplo. Considerando que retirei os outliers no arquivo de entrada substituindo os mesmos pela média, a Mae não seria tão penalizada. Como é simples a programação dessas métricas, resolvi então apresentar as duas.<br/>
