@@ -6,7 +6,7 @@ Começamos com a análise exploratória que está apresentada na pasta Arquivos 
   algo_test_winecorrigido.py - Contem a rotina de processamento da fonte de dados sobre vinhos pré_processada e corrigida em ouliers, campos vazios e outras correções. Na pasta Arquivos de Exploração contém resultados da análise exploratória que definiu a limpeza a ser feita.<br/>
   algo_test_comPCA.py - Contem a rotina de processamento da fonte de dados sobre vinhos corrigida e depois reduzida dimensionalmente por Análise de Componentes Principais (PCA) para 2 componentes principais em X . Na pasta Arquivos de Exploração você pode observar o gráfico plotado do resultado da PCA. A qualidade dos resultados com a PCA foi inferior.<br/>
   algo_test_comtitanic.py - Contem uma rotina de processamento utilizando este Framework, para uma fonte de dados sobre os sobreviventes do Titanic. Usei este arquivo para avaliar meu código e as métricas.<br/>
-  main_application.py - Contem um exemplo da chamada do classificador em produção, sem componentes de avaliação de performance ou métricas. Simplesmente a chamada e o resultado.<br/>
+  main_application.py - Contem um exemplo da chamada do classificador em produção, sem componentes de avaliação de performance ou métricas. Simplesmente a chamada e o resultado.<br/><br/>
   Temos também as classes criadas para executar o processamento chamado nas linhas de execução:<br/>
   classification.py - fornece métodos comuns a chamada de qualquer dos algoritmos citados, inclusive o cálculo da função de custo.<br/>
   preprocessing.py - fornece métodos comuns ao pré processamento de qualquer arquivo de entrada.<br/>
@@ -24,7 +24,7 @@ Começamos com a análise exploratória que está apresentada na pasta Arquivos 
   c. Qual foi o critério utilizado na seleção do modelo final?<br/>
   Selecionei o modelo final após os testes feitos e avaliação dos resultados apresentado para os dois modelos que preconizei : dados completos ou dados reduzidos por PCA.<br/>
   d. Qual foi o critério utilizado para validação do modelo? Por que escolheu utilizar este método?<br/>
-  Fiz 200 iterações com cada um dos algoritmo, extraí a média das métricas ACURÁCIA, MAE E MSE e verifiquei qual o melhor resultado.
+  Fiz 200 iterações com cada um dos algoritmo, extraí a média das métricas ACURÁCIA, MAE E MSE e verifiquei qual o melhor resultado.<br/>
   e. Quais evidências você possui de que seu modelo é suficientemente bom?<br/>
   O algoritmo KNN retornou os melhores resultados para a acurácia, porém quanto testamos com a fonte de dados titanic, vemos que pode ainda melhorar. Digo então que inicialmente escolho utilizar o KNN pela melhor acurácia, porém transformações no arquivo ainda devem ser feitas pois a função de custo está alta.<br/>
   Considero que o modelo proposto é suficiente bom para uma avaliação do framework proposto, porém acredito em melhoras. Navegando pelo Github vi implementações de análise deste dataset com 60% de acuracia e no nosso caso em alguns processamentos conseguimos mais de 80%.
