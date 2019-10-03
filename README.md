@@ -26,7 +26,7 @@ Começamos com a análise exploratória que está apresentada na pasta Arquivos 
   d. Qual foi o critério utilizado para validação do modelo? Por que escolheu utilizar este método?<br/>
   Fiz 200 iterações com cada um dos algoritmo, extraí a média das métricas ACURÁCIA, MAE E MSE e verifiquei qual o melhor resultado.
   e. Quais evidências você possui de que seu modelo é suficientemente bom?<br/>
-  O algoritmo KNN retornou os melhores resultados para a acurácia, porém quanto testamos com a fonte de dados titanic, vemos que pode ainda melhorar. Digo então que inicialmente escolho utilizar o KNN pela melhor acurácia, porém transformações no arquivo ainda devem ser feitas pois o função de custo está alta.<br/>
+  O algoritmo KNN retornou os melhores resultados para a acurácia, porém quanto testamos com a fonte de dados titanic, vemos que pode ainda melhorar. Digo então que inicialmente escolho utilizar o KNN pela melhor acurácia, porém transformações no arquivo ainda devem ser feitas pois a função de custo está alta.<br/>
   Considero que o modelo proposto é suficiente bom para uma avaliação do framework proposto, porém acredito em melhoras. Navegando pelo Github vi implementações de análise deste dataset com 60% de acuracia e no nosso caso em alguns processamentos conseguimos mais de 80%.
   
 
