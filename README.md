@@ -7,10 +7,10 @@ Começamos com a análise exploratória que está apresentada na pasta Arquivos 
   algo_test_comPCA.py - Contem a rotina de processamento da fonte de dados sobre vinhos corrigida e depois reduzida dimensionalmente por Análise de Componentes Principais (PCA) para 2 componentes principais em X . Na pasta Arquivos de Exploração você pode observar o gráfico plotado do resultado da PCA. A qualidade dos resultados com a PCA foi inferior.<br/>
   algo_test_comtitanic.py - Contem uma rotina de processamento utilizando este Framework, para uma fonte de dados sobre os sobreviventes do Titanic. Usei este arquivo para avaliar meu código e as métricas.<br/>
   main_application.py - Contem um exemplo da chamada do classificador em produção, sem componentes de avaliação de performance ou métricas. Simplesmente a chamada e o resultado.<br/><br/>
-  Temos também as classes criadas para executar o processamento chamado nas linhas de execução:<br/>
+  Temos também as classes criadas para executar o processamento e pré-processamento chamado nas linhas de execução:<br/>
+  Wine Pre-Processamento.ipynb - mostra no júpiter os estudos exploratórios iniciais para limpeza dos dados.<br/>
   classification.py - fornece métodos comuns a chamada de qualquer dos algoritmos citados, inclusive o cálculo da função de custo.<br/>
   preprocessing.py - fornece métodos comuns ao pré processamento de qualquer arquivo de entrada.<br/>
-  Wine Pre-Processamento.ipynb - mostra no júpiter os estudos exploratórios iniciais para limpeza dos dados.<br/>
   PCA.py - executa análise de componentes principais no arquivo de vinhos reduzindo a dimensionalidade para 2 componentes e plota o grafico.<br/>
   svm.py - instancia o classificador SVM<br/>
   knn.py - instancia o classificador KNN<br/>
