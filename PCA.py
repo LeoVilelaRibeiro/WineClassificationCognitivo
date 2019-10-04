@@ -25,10 +25,10 @@ x = df.loc [:, features] .values
 # Separando o target 
 y = df.loc [:, ['quality']]. values 
 # Padronizando os recursos 
-x = StandardScaler (). fit_transform (x)
 #Para realizar processamentos de dataset com colunas representando
 # grandezas diferentes como este, temos de normalizar,
 # sendo assim executaremos a normalização antes de extrair componentes principais da nossa base
+x = StandardScaler (). fit_transform (x)
 from sklearn.decomposition import PCA
 pca = PCA(n_components=2)
 principalComponents = pca.fit_transform(x)
