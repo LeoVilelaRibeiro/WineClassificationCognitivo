@@ -22,9 +22,9 @@ Começamos com a análise exploratória que está apresentada na pasta Arquivos 
    b. Como foi definida a função de custo utilizada?<br/>
   Trabalhamos com duas funções de custo: mae e mse. Utilizei as mesmas por serem bem comuns para modelos de regressão ou classificação     não binária onde o resultado se dá como um score, como foi o caso do exemplo. Considerando que retirei os outliers no arquivo de entrada substituindo os mesmos pela média, a Mae não seria tão penalizada. Como é simples a programação dessas métricas, resolvi então apresentar as duas.<br/>
   c. Qual foi o critério utilizado na seleção do modelo final?<br/>
-  Selecionei o modelo final após os testes feitos e avaliação dos resultados apresentado para os dois modelos que preconizei : dados completos ou dados reduzidos por PCA.<br/>
+  Selecionei o modelo final após os testes feitos e avaliação dos resultados apresentados para os dois modelos que preconizei : dados completos ou dados reduzidos por PCA - O vencedor foi o de dados completos.<br/>
   d. Qual foi o critério utilizado para validação do modelo? Por que escolheu utilizar este método?<br/>
-  Fiz 200 iterações com cada um dos algoritmo, extraí a média das métricas ACURÁCIA, MAE E MSE e verifiquei qual o melhor resultado.Escolhi essas métricas pela simplicidade das mesmas e por serem amplamente usadas em trabalhos científicos.<br/>
+  Fiz 200 iterações com cada um dos algoritmos, extraí a média das métricas ACURÁCIA, MAE E MSE e verifiquei qual o melhor resultado.Escolhi essas métricas pela simplicidade das mesmas e por serem amplamente usadas em trabalhos científicos.<br/>
   e. Quais evidências você possui de que seu modelo é suficientemente bom?<br/>
   O algoritmo KNN retornou os melhores resultados para a acurácia, porém quanto testamos com a fonte de dados titanic, vemos que pode ainda melhorar, pois comparado com a Titanic estamos bem fracos ainda. Digo então que inicialmente escolho utilizar o KNN pela melhor acurácia, porém transformações no arquivo ainda devem ser feitas pois a função de custo está alta.<br/>
   Considero que o modelo proposto é suficiente bom para uma avaliação do framework proposto, porém acredito em melhoras. Navegando pelo Github vi implementações de análise deste dataset com 60% de acuracia e no nosso caso em quase todos os processamentos conseguimos mais de 80%.
